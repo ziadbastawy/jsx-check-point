@@ -1,9 +1,5 @@
 import './Profile.css';
-{/* <Profile fullName="Ziad Bastawy" bio="my is name ziad, I'm Computer science student" profession="Phd" 
-handleName={handleName}>
-<img src="./imgSrc.png" alt="user" />
-</Profile> */}
-
+import PropTypes from 'prop-types'; 
 function Profile(props) {
   return (
     <div className="profile">
@@ -19,3 +15,13 @@ function Profile(props) {
   );
 }
 export default Profile;
+
+Profile.defaultProps = {
+  fullName:'ziad',
+  profession:'maste'
+}
+
+Profile.PropTypes = {
+  fullName:PropTypes.string,
+  handleName:PropTypes.func
+}

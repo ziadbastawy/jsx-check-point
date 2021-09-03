@@ -1,21 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Profile from './Profile/Profile';
+import user_img from './imgSrc.png'
 function App() {
+  const handleName = (e) => {
+    e.preventDefault()
+    alert(`my name is Ziad`)
+  }
   return (
     <div className="App">
-      <div style={{border:'solid 1px black',maxWidth:'100vw'}}>
-        <h1 class="title red">Your name here</h1>
-        <br />
-        <img src="./imgSrc.png" alt="imgSrc" />
-        <br />
-        <img src="/imgPublic.png" alt="public" />
-      </div>
-
-      <video width="320" height="240" controls>
-        <source src="myVideo.mp4" type="video/mp4" />
-      </video>
-
+      <Profile fullName="Ziad Bastawy" bio="my is name ziad, I'm Computer science student" profession="Phd" 
+        handleName={handleName}
+      >
+        <img src={user_img} alt="user" className="img" />
+      </Profile>
     </div>
   );
 }

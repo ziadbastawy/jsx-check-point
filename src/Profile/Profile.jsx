@@ -1,5 +1,5 @@
 import './Profile.css';
-import PropTypes from 'prop-types'; 
+import propTypes from 'prop-types'; 
 function Profile(props) {
   return (
     <div className="profile">
@@ -21,7 +21,7 @@ Profile.defaultProps = {
   profession:'maste'
 }
 
-Profile.PropTypes = {
-  fullName:PropTypes.string,
-  handleName:PropTypes.func
+Profile.propTypes = {
+  fullName:propTypes.string,
+  handleName:propTypes.func
 }

@@ -3,7 +3,6 @@ import Profile from './Profile/Profile';
 import user_img from './imgSrc.png'
 function App() {
   const handleName = (e) => {
-    e.preventDefault()
     alert(`my name is Ziad`)
   }
   return (

@@ -1,9 +1,12 @@
 .profile {
     height: 40vh;
-    width: 80%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 9px;
+    
 }
 
 .profile .info {
